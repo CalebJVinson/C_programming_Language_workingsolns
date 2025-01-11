@@ -10,7 +10,7 @@ void expand(const char s1[], char s2[]) {
       char start = c;
       char end = s1[i + 1];
       if ((isalpha(start) && isalpha(end)) || (isdigit(start) && isdigit(end))) {
-                i += 2; // Skip '-<end>'
+                i += 2; 
                 for (char k = start; k <= end; k++) {
                     s2[j++] = k;
                 }
